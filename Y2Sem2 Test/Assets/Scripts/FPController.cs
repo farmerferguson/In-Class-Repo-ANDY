@@ -53,7 +53,7 @@ public class FPController : MonoBehaviour
         }
     }
 
-    public void onShoot(InputAction.CallbackContext context)
+    public void OnShoot(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
@@ -61,16 +61,17 @@ public class FPController : MonoBehaviour
         }
     }
 
-    public void Shoot()
+    private void Shoot()
     {
         if (bulletPrefab != null && gunPoint != null)
         {
             GameObject bullet = Instantiate(bulletPrefab, gunPoint.position, gunPoint.rotation);
-            RigidBody rb = bullet.GetComponent<Rigidbody>();
+            Rigidbody rb = bullet.GetComponent<Rigidbody>();
 
             if (rb != null)
             {
                 rb.AddForce(gunPoint.forward * 1000f);
+                Destroy(bullet, 3);
             }
         }
     }
