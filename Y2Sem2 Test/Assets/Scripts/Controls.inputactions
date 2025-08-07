@@ -31,6 +31,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Shoot",
+                    "type": "Button",
+                    "id": "9550301a-2b9b-4927-b8eb-bf331979c6b8",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -223,7 +232,18 @@
                 },
                 {
                     "name": "",
-                    "id": "78fdc1bb-8851-40fd-907e-c94b31669f6a",
+                    "id": "39d956ae-0dbb-48a4-944d-064c48ba71d6",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "13e7ddd4-d75e-47b2-8152-98a18a0185f7",
                     "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
@@ -234,12 +254,23 @@
                 },
                 {
                     "name": "",
-                    "id": "39d956ae-0dbb-48a4-944d-064c48ba71d6",
-                    "path": "<Gamepad>/buttonSouth",
+                    "id": "ac50816c-4ad0-459d-a3fe-4e0e69ef3a58",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard",
+                    "action": "Shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "24d34fbd-9b79-489d-a02e-b309e4116eeb",
+                    "path": "<Gamepad>/rightTrigger",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
-                    "action": "Jump",
+                    "action": "Shoot",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

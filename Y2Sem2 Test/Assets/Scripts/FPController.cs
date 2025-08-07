@@ -19,6 +19,10 @@ public class FPController : MonoBehaviour
     private Vector3 velocity;
     private float verticalRotation = 0f;
 
+    [Header("Shooting")]
+    public GameObject bulletPrefab;
+    public Transform gunPoint;
+
     private void Awake()
     {
         controller = GetComponent<CharacterController>();
@@ -45,7 +49,29 @@ public class FPController : MonoBehaviour
     {
         if (context.performed && controller.isGrounded)
         {
-            velocity.y  = Mathf.Sqrt(jumpHeight * -2f * gravity);
+            velocity.y  = Mathf.Sqrt (jumpHeight * -2f * gravity);
+        }
+    }
+
+    public void onShoot(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            Shoot();
+        }
+    }
+
+    public void Shoot()
+    {
+        if (bulletPrefab != null && gunPoint != null)
+        {
+            GameObject bullet = Instantiate(bulletPrefab, gunPoint.position, gunPoint.rotation);
+            RigidBody rb = bullet.GetComponent<Rigidbody>();
+
+            if (rb != null)
+            {
+                rb.AddForce(gunPoint.forward * 1000f);
+            }
         }
     }
 
