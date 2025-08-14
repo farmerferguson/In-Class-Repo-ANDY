@@ -6,7 +6,7 @@ public class PickUpObject : MonoBehaviour
 
     void Awake()
     {
-        rb = GetComponent<Rigidbody>()
+        rb = GetComponent<Rigidbody>();
     }
 
     public void PickUp(Transform holdPoint)

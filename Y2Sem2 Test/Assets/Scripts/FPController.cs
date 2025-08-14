@@ -29,6 +29,11 @@ public class FPController : MonoBehaviour
     public float crouchSpeed = 2.5f;
     private float originalMoveSpeed;
 
+    [Header("Pickup Settings")]
+    public float pickupRange =3f;
+    public Transform holdPoint;
+    private PickUpObject heldObject;
+
     private void Awake()
     {
         controller = GetComponent<CharacterController>();
