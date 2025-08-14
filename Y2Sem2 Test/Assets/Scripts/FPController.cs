@@ -34,6 +34,10 @@ public class FPController : MonoBehaviour
     public Transform holdPoint;
     private PickUpObject heldObject;
 
+    [Header ("Throw Settings")]
+    public float throwForce = 10f;
+    public float throwUpwardBoost = 1f;
+
     private void Awake()
     {
         controller = GetComponent<CharacterController>();
@@ -157,6 +161,19 @@ public class FPController : MonoBehaviour
             heldObject.Drop();
             heldObject = null;
         }
+    }
+
+    public void OnThrow(InputAction.CallbackContext context)
+    {
+        if (!context.performed) return;
+        if (heldObject == null) return;
+
+        Vector3 dir = cameraTransform.forward;
+        Vector3 impulse = dir * throwForce + Vector3.up * throwUpwardBoost;
+
+        heldObject.Throw(impulse);
+        heldObject = null;
+
     }
 
 
