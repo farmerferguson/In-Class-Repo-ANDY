@@ -30,4 +30,5 @@ public class PickUpObject : MonoBehaviour
     {
         rb.MovePosition(targetPosition);
     }
+
 }
