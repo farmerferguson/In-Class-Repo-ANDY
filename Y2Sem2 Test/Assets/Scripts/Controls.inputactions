@@ -320,7 +320,7 @@
                     "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";Keyboard",
                     "action": "Pickup",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -331,7 +331,7 @@
                     "path": "<Gamepad>/buttonEast",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";Gamepad",
                     "action": "Pickup",
                     "isComposite": false,
                     "isPartOfComposite": false
