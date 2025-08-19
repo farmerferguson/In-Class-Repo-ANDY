@@ -1,8 +1,10 @@
 using UnityEngine;
 
 namespace MyGame.Characters;
-
-public class Characters : MonoBehaviour
 {
+    public class Characters : MonoBehaviour
+    {
+
+    }
 
 }
