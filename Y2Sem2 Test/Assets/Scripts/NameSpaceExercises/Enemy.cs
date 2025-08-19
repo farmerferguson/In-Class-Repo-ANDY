@@ -1,10 +1,16 @@
 using UnityEngine;
-using MyGame.Characters;
+
+namespace MyGame.Characters;
 
 public class Enemy : MonoBehaviour
 {
-    int damage = 25;
-    print ("Damage done is" + damage());
+    public int damage = 25;
+    
+    public void PrintDamage()
+    {
+        Debug.Log("Enemy Damage is: " + damage);
+    }
+    
 
 
 }

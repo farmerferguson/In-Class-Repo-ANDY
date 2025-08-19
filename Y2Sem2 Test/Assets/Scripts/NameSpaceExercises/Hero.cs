@@ -1,12 +1,13 @@
 using UnityEngine;
-using MyGame.Characters;
+
+namespace MyGame.Characters;
 
 public class Hero : MonoBehaviour
 {
     public int health = 100;
-    public void
+    public void PrintHealth()
     {
-        print ("Player Health is" + health);
+        Debug.Log("Hero Health is: " + health);
     }
 
 }
