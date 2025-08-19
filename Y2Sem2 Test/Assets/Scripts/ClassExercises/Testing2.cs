@@ -2,15 +2,11 @@ using UnityEngine;
 
 public class Testing2 : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public PotionData potion;
     void Start()
     {
-        
+        Debug.Log("Potion: " + potion.potionName + " heals for " + potion.healAmount);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }
