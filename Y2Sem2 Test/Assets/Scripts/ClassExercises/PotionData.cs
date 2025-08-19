@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "PotionData", menuName = "Scriptable Objects/Potion")]
+[CreateAssetMenu(fileName = "Potion", menuName = "Scriptable Objects/Potion")]
 
 public class PotionData : ScriptableObject
 {
