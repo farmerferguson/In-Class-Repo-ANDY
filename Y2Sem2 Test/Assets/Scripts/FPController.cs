@@ -190,7 +190,7 @@ public class FPController : MonoBehaviour
                 var switcher = hit.collider.GetComponent<MaterialSwitcher>();
                 if (switcher != null)
                 {
-                    switcher.ToggleMaterail();
+                    switcher.ToggleMaterial();
                 }
             }
         }
