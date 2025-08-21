@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MateriallSwitcher : MonoBehaviour
+public class MaterialSwitcher : MonoBehaviour
 {
     public Material alternateMaterial;
     private Renderer rend;
