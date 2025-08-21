@@ -11837,7 +11837,7 @@ GameObject:
   - component: {fileID: 771332899}
   m_Layer: 0
   m_Name: CodeCube
-  m_TagString: Untagged
+  m_TagString: Switchable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31509,6 +31509,7 @@ MonoBehaviour:
   holdPoint: {fileID: 1764494482}
   throwForce: 10
   throwUpwardBoost: 1
+  interactRange: 3
 --- !u!43 &2018033622
 Mesh:
   m_ObjectHideFlags: 0
